@@ -1,14 +1,8 @@
 .PHONY: env
-env:
-	if [ ! -f deps/lockfiles/monorepo.lock ]; then \
-		pants generate-lockfiles; \
-	fi
-	pants export --resolve=monorepo
+env: generate-venv
 
 .PHONY: regenerate-env
-regenerate-env:
-	pants generate-lockfiles
-	pants export --resolve=monorepo
+regenerate-env: generate-lockfiles generate-venv 
 
 .PHONY: check
 check: 
@@ -17,3 +11,11 @@ check:
 .PHONY: fmt
 fmt:
 	pants fmt ::
+
+.PHONY: generate-lockfiles
+generate-lockfiles:
+	pants generate-lockfiles
+	
+.PHONY: generate-venv
+generate-venv:
+	pants export ::
