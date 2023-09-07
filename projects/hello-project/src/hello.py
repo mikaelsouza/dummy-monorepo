@@ -6,7 +6,7 @@ def array_addition(m: polars.DataFrame, n: polars.DataFrame) -> polars.DataFrame
     return m + n
 
 
-def main() -> None:
+def main():
     data = numpy.array(
         [
             [1, 2, 3, 4],
