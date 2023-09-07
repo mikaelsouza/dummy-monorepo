@@ -1,0 +1,31 @@
+[GLOBAL]
+pants_version = "2.17.0"
+pants_workdir = ".pants/.pants.d"
+pants_subprocessdir = ".pants/.pids"
+
+pants_distdir = ".monorepo/"
+
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.build_files.fmt.black",
+  "pants.backend.python.lint.black",
+  "pants.backend.python.lint.docformatter",
+  "pants.backend.python.lint.pylint",
+  "pants.backend.python.typecheck.mypy",
+]
+
+[python]
+interpreter_constraints = ["==3.10.*"]
+pip_version = "latest"
+enable_resolves = true
+default_resolve = "monorepo"
+
+[python.resolves]
+monorepo = "lockfiles/monorepo.lock"
+
+[python-infer]
+use_rust_parser = true
+
+[anonymous-telemetry]
+enabled = false
+
