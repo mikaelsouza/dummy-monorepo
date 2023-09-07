@@ -21,6 +21,12 @@ default_resolve = "monorepo"
 [python.resolves]
 monorepo = "deps/lockfiles/monorepo.lock"
 
+[python-repos]
+indexes = [
+  "https://download.pytorch.org/whl/cpu",
+  "https://pypi.org/simple/"
+]
+
 [python-infer]
 use_rust_parser = true
 
