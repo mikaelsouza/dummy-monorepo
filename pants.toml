@@ -2,16 +2,14 @@
 pants_version = "2.17.0"
 pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
-
 pants_distdir = ".monorepo/"
 
 backend_packages = [
   "pants.backend.python",
-  "pants.backend.build_files.fmt.black",
   "pants.backend.python.lint.black",
   "pants.backend.python.lint.docformatter",
-  "pants.backend.python.lint.pylint",
   "pants.backend.python.typecheck.mypy",
+  "pants.backend.build_files.fmt.black",
 ]
 
 [python]
@@ -29,3 +27,12 @@ use_rust_parser = true
 [anonymous-telemetry]
 enabled = false
 
+[black]
+interpreter_constraints = ["==3.10.*"]
+
+[docformatter]
+interpreter_constraints = ["==3.10.*"]
+
+[mypy]
+interpreter_constraints = ["==3.10.*"]
+args = ["--ignore-missing-imports"]
