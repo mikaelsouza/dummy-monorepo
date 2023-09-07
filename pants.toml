@@ -19,7 +19,7 @@ enable_resolves = true
 default_resolve = "monorepo"
 
 [python.resolves]
-monorepo = "lockfiles/monorepo.lock"
+monorepo = "deps/lockfiles/monorepo.lock"
 
 [python-infer]
 use_rust_parser = true

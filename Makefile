@@ -1,6 +1,6 @@
 .PHONY: env
 env:
-	if [ ! -f lockfiles/monorepo.lock ]; then \
+	if [ ! -f deps/lockfiles/monorepo.lock ]; then \
 		pants generate-lockfiles; \
 	fi
 	pants export --resolve=monorepo
