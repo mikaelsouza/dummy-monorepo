@@ -1,3 +1,4 @@
 .pants/
 .monorepo/
 .mypy_cache/
+data/
