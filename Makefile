@@ -19,3 +19,7 @@ generate-lockfiles:
 .PHONY: generate-venv
 generate-venv:
 	pants export ::
+
+.PHONY: titanic-download-dataset
+titanic-download-dataset:
+	@ projects/titanic/scripts/get-dataset.sh
