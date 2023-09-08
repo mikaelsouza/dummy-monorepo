@@ -45,4 +45,7 @@ interpreter_constraints = ["==3.10.*"]
 
 [mypy]
 interpreter_constraints = ["==3.10.*"]
-args = ["--ignore-missing-imports"]
+args = [
+  "--ignore-missing-imports",
+  "--cache-dir", ".monorepo/.mypy_cache",
+]
