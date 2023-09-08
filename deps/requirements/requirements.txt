@@ -5,3 +5,4 @@ fastapi
 numpy
 ipykernel
 scikit-learn
+jupyterlab

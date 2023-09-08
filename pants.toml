@@ -10,6 +10,10 @@ backend_packages = [
   "pants.backend.python.lint.docformatter",
   "pants.backend.python.typecheck.mypy",
   "pants.backend.build_files.fmt.black",
+  "pants.backend.shell",
+  "pants.backend.shell.lint.shfmt",
+  "pants.backend.shell.lint.shellcheck",
+  "pants.backend.docker",
 ]
 
 [python]
