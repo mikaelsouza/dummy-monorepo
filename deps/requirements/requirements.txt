@@ -6,3 +6,6 @@ numpy
 ipykernel
 scikit-learn
 jupyterlab
+pandas
+pandas-stubs
+matplotlib

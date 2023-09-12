@@ -12,7 +12,10 @@
 //     "fastapi",
 //     "ipykernel",
 //     "jupyterlab",
+//     "matplotlib",
 //     "numpy",
+//     "pandas",
+//     "pandas-stubs",
 //     "polars",
 //     "scikit-learn",
 //     "seaborn",
@@ -2364,6 +2367,28 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "4b3dfc027d49779176b7daa031a3405f7b839bcb6e312f4b9f29fea5feec5b4f",
+              "url": "https://files.pythonhosted.org/packages/0c/e9/e9550b05e262afc75b014b79224b6910f7cbc85cc40448b709ac90a58ecd/pandas_stubs-2.0.3.230814-py3-none-any.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "1d5cc09e36e3d9f9a1ed9dceae4e03eeb26d1b898dd769996925f784365c8769",
+              "url": "https://files.pythonhosted.org/packages/cc/73/852fec3fa5dd3072c261fb5153e82badcb6da63d8c3bbd4b386af0005379/pandas_stubs-2.0.3.230814.tar.gz"
+            }
+          ],
+          "project_name": "pandas-stubs",
+          "requires_dists": [
+            "numpy<=1.24.3; python_full_version <= \"3.8.0\"",
+            "numpy>=1.25.0; python_version >= \"3.9\"",
+            "types-pytz>=2022.1.1"
+          ],
+          "requires_python": ">=3.8",
+          "version": "2.0.3.230814"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "33aae3f25fd1a026079f5d27bdd52496f0e0803b3469282162bafdcbdf6ef14f",
               "url": "https://files.pythonhosted.org/packages/5e/a8/878258cffd53202a6cc1903c226cf09e58ae3df6b09f8ddfa98033286637/pandocfilters-1.5.0-py2.py3-none-any.whl"
             },
@@ -3816,6 +3841,24 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "65152e872137926bb67a8fe6cc9cfd794365df86650c5d5fdc7b167b0f38892e",
+              "url": "https://files.pythonhosted.org/packages/97/54/936703c579135395210c6819cfaeda02264e024b2a1a11990fd8bf1d5dc2/types_pytz-2023.3.0.1-py3-none-any.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "1a7b8d4aac70981cfa24478a41eadfcd96a087c986d6f150d77e3ceb3c2bdfab",
+              "url": "https://files.pythonhosted.org/packages/78/04/f1a77be852ae8102dc6ab531a3095ce1c1cc80cfa8a12afe015eeec68aa5/types-pytz-2023.3.0.1.tar.gz"
+            }
+          ],
+          "project_name": "types-pytz",
+          "requires_dists": [],
+          "requires_python": null,
+          "version": "2023.3.0.1"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36",
               "url": "https://files.pythonhosted.org/packages/ec/6b/63cc3df74987c36fe26157ee12e09e8f9db4de771e0f3404263117e75b95/typing_extensions-4.7.1-py3-none-any.whl"
             },
@@ -4016,7 +4059,10 @@
     "fastapi",
     "ipykernel",
     "jupyterlab",
+    "matplotlib",
     "numpy",
+    "pandas",
+    "pandas-stubs",
     "polars",
     "scikit-learn",
     "seaborn",
