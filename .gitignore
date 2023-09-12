@@ -2,3 +2,4 @@
 .monorepo/
 .mypy_cache/
 data/
+.ipynb_checkpoints/
