@@ -2,5 +2,5 @@ steps:
   build:
     image: python:3.10-slim-bullseye
     commands:
-      - .pants/get-pants.sh --bin-dir .pants/pants
-      - "./pants/pants fmt ::"
+      - scripts/get-pants.sh --bin-dir pants
+      - "./pants fmt ::"
