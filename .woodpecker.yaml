@@ -2,5 +2,5 @@ steps:
   build:
     image: python:3.10-slim-bullseye
     commands:
-      - printenv
-      - bin/pants package
+      - .pants/get-pants.sh --bin-dir .pants/pants
+      - "./pants/pants fmt ::"
