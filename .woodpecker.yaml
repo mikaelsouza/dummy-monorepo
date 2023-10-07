@@ -2,6 +2,7 @@ steps:
   build:
     image: python:3.10-slim-bullseye
     commands:
+      - apt update && apt install curl
       - chmod +x scripts/get-pants.sh
       - scripts/get-pants.sh --bin-dir pants
       - "./pants fmt ::"
