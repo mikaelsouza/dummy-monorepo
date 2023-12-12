@@ -1,5 +1,6 @@
 steps:
   build:
+    pull: true
     image: mikaelsouza/pants:dummy-monorepo
     commands:
       - "pants fmt ::"
