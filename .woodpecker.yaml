@@ -1,28 +1,27 @@
 steps:
-  # check:
-  #   group: validations
-  #   pull: true
-  #   image: mikaelsouza/pants:dummy-monorepo
-  #   commands:
-  #     - "pants check ::"
-  # lint:
-  #   group: validations
-  #   pull: true
-  #   image: mikaelsouza/pants:dummy-monorepo
-  #   commands:
-  #     - "pants lint ::"
-  # test:
-  #   group: validations
-  #   pull: true
-  #   image: mikaelsouza/pants:dummy-monorepo
-  #   commands:
-  #     - "pants test ::"
-  validation:
+  check:
+    group: validations
     pull: true
     image: mikaelsouza/pants:dummy-monorepo
     commands:
       - "pants check ::"
+    when:
+      - event: push
+
+  lint:
+    group: validations
+    pull: true
+    image: mikaelsouza/pants:dummy-monorepo
+    commands:
       - "pants lint ::"
+    when:
+      - event: push
+
+  test:
+    group: validations
+    pull: true
+    image: mikaelsouza/pants:dummy-monorepo
+    commands:
       - "pants test ::"
     when:
       - event: push
