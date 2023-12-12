@@ -24,3 +24,5 @@ steps:
       - "pants check ::"
       - "pants lint ::"
       - "pants test ::"
+    when:
+      - event: push
