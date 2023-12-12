@@ -4,6 +4,8 @@ pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
 pants_distdir = ".monorepo/"
 
+concurrent = true
+
 backend_packages = [
   "pants.backend.python",
   "pants.backend.python.lint.black",
@@ -26,10 +28,7 @@ default_resolve = "monorepo"
 monorepo = "deps/lockfiles/monorepo.lock"
 
 [python-repos]
-indexes = [
-  "https://download.pytorch.org/whl/cpu",
-  "https://pypi.org/simple/"
-]
+indexes = ["https://download.pytorch.org/whl/cpu", "https://pypi.org/simple/"]
 
 [python-infer]
 use_rust_parser = true
@@ -45,7 +44,4 @@ interpreter_constraints = ["==3.10.*"]
 
 [mypy]
 interpreter_constraints = ["==3.10.*"]
-args = [
-  "--ignore-missing-imports",
-  "--cache-dir", ".monorepo/.mypy_cache",
-]
+args = ["--ignore-missing-imports", "--cache-dir", ".monorepo/.mypy_cache"]
