@@ -1,4 +1,4 @@
-FROM python:3.10-slim-bullseye
+FROM python:3.10-slim-bookworm
 
 WORKDIR /pants/
 
@@ -14,8 +14,8 @@ RUN ./get-pants.sh
 
 ENV PATH=/root/bin:$PATH
 
-RUN touch pants.toml
+ADD pants.toml pants.toml
 
-RUN PANTS_VERSION=2.17.0 pants -V
+RUN pants -V
 
 RUN rm pants.toml
