@@ -23,3 +23,11 @@ generate-venv:
 .PHONY: titanic-download-dataset
 titanic-download-dataset:
 	@ projects/titanic/scripts/get-dataset.sh
+
+.PHONY: update-pants-image
+update-pants-image:
+	@ docker buildx build \
+		--push \
+		-t mikaelsouza/pants:latest \
+		-f dockerfiles/pants.Dockerfile \
+		--platform linux/amd64,linux/arm64 .
