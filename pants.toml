@@ -3,9 +3,7 @@ pants_version = "2.18.1"
 pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
 pants_distdir = ".monorepo/"
-
 concurrent = true
-
 backend_packages = [
   "pants.backend.python",
   "pants.backend.python.lint.black",
@@ -15,7 +13,6 @@ backend_packages = [
   "pants.backend.shell",
   "pants.backend.shell.lint.shfmt",
   "pants.backend.shell.lint.shellcheck",
-  "pants.backend.docker",
 ]
 
 [python]
