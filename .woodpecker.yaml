@@ -2,7 +2,7 @@ steps:
   check:
     group: validations
     pull: true
-    image: mikaelsouza/pants:dummy-monorepo
+    image: mikaelsouza/pants:latest
     commands:
       - "pants check ::"
     when:
@@ -11,7 +11,7 @@ steps:
   lint:
     group: validations
     pull: true
-    image: mikaelsouza/pants:dummy-monorepo
+    image: mikaelsouza/pants:latest
     commands:
       - "pants lint ::"
     when:
@@ -20,7 +20,7 @@ steps:
   test:
     group: validations
     pull: true
-    image: mikaelsouza/pants:dummy-monorepo
+    image: mikaelsouza/pants:latest
     commands:
       - "pants test ::"
     when:
