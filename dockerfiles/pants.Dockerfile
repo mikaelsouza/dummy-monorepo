@@ -19,3 +19,5 @@ ADD pants.toml pants.toml
 RUN pants -V
 
 RUN rm pants.toml
+
+ENV PANTS_CONFIG_FILES=pants.ci.toml
