@@ -1,5 +1,4 @@
 [GLOBAL]
-
 remote_cache_read = true
 remote_cache_write = true
 remote_store_address = "grpc://remote-cache:9092"
