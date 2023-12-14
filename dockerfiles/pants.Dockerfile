@@ -4,7 +4,7 @@ WORKDIR /pants/
 
 RUN apt update
 
-RUN apt install --no-install-recommends -y curl make git tar xz-utils gcc
+RUN apt install --no-install-recommends -y curl make git tar xz-utils gcc python3-dev
 
 ADD scripts/get-pants.sh .
 
