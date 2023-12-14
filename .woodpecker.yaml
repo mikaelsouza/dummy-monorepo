@@ -1,3 +1,17 @@
+services:
+  remote-cache:
+    image: buchgr/bazel-remote-cache:latest
+    environment:
+      BAZEL_REMOTE_DIR: ".remote-cache"
+      BAZEL_REMOTE_MAX_SIZE: "2"
+      BAZEL_REMOTE_S3_BUCKET: "main-bucket"
+      BAZEL_REMOTE_S3_PREFIX: "monorepo-remote-cache"
+      BAZEL_REMOTE_S3_AUTH_METHOD: "access_key"
+    secrets:
+      - "bazel_remote_s3_access_key_id"
+      - "bazel_remote_s3_secret_access_key"
+      - "bazel_remote_s3_endpoint"
+
 steps:
   check:
     group: validations
