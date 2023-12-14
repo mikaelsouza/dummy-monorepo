@@ -32,3 +32,6 @@ enabled = false
 
 [mypy]
 args = ["--ignore-missing-imports", "--cache-dir", ".monorepo/.mypy_cache"]
+
+[pytest]
+install_from_resolve = "monorepo"
