@@ -30,4 +30,4 @@ update-pants-image:
 		--push \
 		-t mikaelsouza/pants:latest \
 		-f dockerfiles/pants.Dockerfile \
-		--platform linux/amd64,linux/arm64 .
+		--platform linux/arm64 .
