@@ -14,3 +14,7 @@ def b():
 
 def test_func(a, b):
     assert hello.func(a, b) == 3
+
+
+def test_func_2(a, b):
+    assert hello.func(a, b) != 4
