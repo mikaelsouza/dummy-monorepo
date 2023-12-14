@@ -18,7 +18,7 @@ generate-lockfiles:
 	
 .PHONY: generate-venv
 generate-venv:
-	pants export ::
+	pants export --resolve=monorepo
 
 .PHONY: titanic-download-dataset
 titanic-download-dataset:
