@@ -15,6 +15,9 @@ backend_packages = [
   "pants.backend.shell.lint.shellcheck",
 ]
 
+[source]
+root_patterns = ["projects/**/"]
+
 [python]
 interpreter_constraints = ["==3.10.*"]
 pip_version = "latest"
