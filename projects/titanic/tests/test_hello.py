@@ -1,20 +1,23 @@
 import pytest
+import polars
 from serving import hello
 
 
 @pytest.fixture
 def a():
-    return 1
+    return polars.DataFrame([[1]])
 
 
 @pytest.fixture
 def b():
-    return 2
+    return polars.DataFrame([[2]])
 
 
 def test_func(a, b):
-    assert hello.func(a, b) == 3
+    result = polars.DataFrame([[3]])
+    assert hello.func(a, b).frame_equal(result)
 
 
 def test_func_2(a, b):
-    assert hello.func(a, b) != 4
+    result = polars.DataFrame([[4]])
+    assert not hello.func(a, b).frame_equal(result)
