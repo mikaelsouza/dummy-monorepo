@@ -10,3 +10,4 @@ pandas
 pandas-stubs
 matplotlib
 pytest
+uvicorn
