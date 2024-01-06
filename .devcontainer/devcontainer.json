@@ -1,0 +1,5 @@
+{
+    "name": "dummy-monorepo",
+    "image": "mikaelsouza/pants:latest",
+    "postCreateCommand": "pants export --resolve=monorepo"
+}
