@@ -1,9 +1,9 @@
 {
     "name": "dummy-monorepo",
-    // "image": "mikaelsouza/pants:latest",
+    "image": "mikaelsouza/pants-local:latest",
     "postCreateCommand": "pants export --resolve=monorepo",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": "../../"
-    }
+    // "build": {
+    //     "dockerfile": "Dockerfile",
+    //     "context": "../../"
+    // }
 }
