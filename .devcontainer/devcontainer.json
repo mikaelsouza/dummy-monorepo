@@ -4,6 +4,6 @@
     "postCreateCommand": "pants export --resolve=monorepo",
     "build": {
         "dockerfile": "Dockerfile",
-        "context": "../."
+        "context": ".."
     }
 }
