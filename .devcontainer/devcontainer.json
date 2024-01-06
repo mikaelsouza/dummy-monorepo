@@ -3,6 +3,6 @@
     // "image": "mikaelsouza/pants:latest",
     "postCreateCommand": "pants export --resolve=monorepo",
     "build": {
-        "dockerfile": "pants-local.Dockerfile"
+        "dockerfile": "Dockerfile"
     }
 }
