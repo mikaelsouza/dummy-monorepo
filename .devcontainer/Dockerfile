@@ -13,9 +13,3 @@ RUN chmod +x get-pants.sh
 RUN ./get-pants.sh
 
 ENV PATH=/root/bin:$PATH
-
-ADD pants.toml pants.toml
-
-RUN pants -V
-
-RUN rm pants.toml
