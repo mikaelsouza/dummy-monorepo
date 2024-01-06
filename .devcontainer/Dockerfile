@@ -14,7 +14,7 @@ RUN ./get-pants.sh
 
 ENV PATH=/root/bin:$PATH
 
-ADD pants.toml pants.toml
+ADD pants.toml /pants/pants.toml
 
 RUN pants -V
 
