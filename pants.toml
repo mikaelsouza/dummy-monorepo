@@ -14,6 +14,7 @@ backend_packages = [
   "pants.backend.shell.lint.shfmt",
   "pants.backend.shell.lint.shellcheck",
 ]
+build_patterns = ["BUILD", "BUILD.*", "*.BUILD"]
 
 [source]
 root_patterns = ["projects/**/"]
@@ -26,6 +27,8 @@ default_resolve = "monorepo"
 
 [python.resolves]
 monorepo = "deps/lockfiles/monorepo.lock"
+titanic = "deps/lockfiles/titanic.lock"
+project2 = "deps/lockfiles/project2.lock"
 
 [python-infer]
 use_rust_parser = true
