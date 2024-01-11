@@ -2,13 +2,13 @@ python_requirements(
     name="global-reqs",
     source="requirements/global.txt",
     resolve=parametrize(
-        "global", 
-        "titanic",
+        "global",
+        "machine-learning",
     ),
 )
 
 python_requirements(
-    name="titanic-reqs",
-    source="requirements/titanic.txt",
-    resolve="titanic",
+    name="machine-learning-reqs",
+    source="requirements/machine-learning.txt",
+    resolve="machine-learning",
 )

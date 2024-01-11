@@ -17,7 +17,7 @@ backend_packages = [
 build_patterns = ["BUILD", "BUILD.*", "*.BUILD"]
 
 [source]
-root_patterns = ["projects/**/"]
+root_patterns = ["projects/**/", "projects/**/**/", "libs/**/", "libs"]
 
 [python]
 interpreter_constraints = ["==3.10.*"]
@@ -27,7 +27,8 @@ default_resolve = "global"
 
 [python.resolves]
 global = "deps/lockfiles/global.lock"
-titanic = "deps/lockfiles/titanic.lock"
+machine-learning = "deps/lockfiles/machine-learning.lock"
+web = "deps/lockfiles/web.lock"
 
 # [python-infer]
 # use_rust_parser = true
