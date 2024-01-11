@@ -10,7 +10,7 @@
 //   ],
 //   "generated_with_requirements": [
 //     "fastapi==0.63.0",
-//     "lightgbm",
+//     "polars",
 //     "torch"
 //   ],
 //   "manylinux": "manylinux2014",
@@ -212,44 +212,6 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "4a767795253ea5872abc7cc4e0892120af9b48a10e151c03cd62116bc2f099ab",
-              "url": "https://files.pythonhosted.org/packages/a6/11/5171f6a1ecf7f008648fef6ef780d92414763ff5ba50a796657b9275dc1e/lightgbm-4.2.0-py3-none-manylinux_2_28_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "2ebf5b53e4a74d5b484698f11d13c5598e5640a8665b146ad16a173c9724a803",
-              "url": "https://files.pythonhosted.org/packages/34/d0/111a224511d04e99e65b966322a2b9799903e3f9d87a52b58d594eda2151/lightgbm-4.2.0-py3-none-macosx_10_15_x86_64.macosx_11_6_x86_64.macosx_12_5_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "8a4d051df2ab2218998a16f7712e843ee9e96d8b09ffbfcc18533da127e0da02",
-              "url": "https://files.pythonhosted.org/packages/92/3d/209b257b7bcfaa39d54b9ab22db5097ff110c6a2f2399d5244c76c43aba2/lightgbm-4.2.0.tar.gz"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "450e645879fad4060858e9e856a1669d6ff058f69857786bd5a2c24d3136cbc0",
-              "url": "https://files.pythonhosted.org/packages/dc/94/68615677907800c68881fd1532ee116a66260d6e401d4cac968e9b751503/lightgbm-4.2.0-py3-none-manylinux2014_aarch64.whl"
-            }
-          ],
-          "project_name": "lightgbm",
-          "requires_dists": [
-            "cffi>=1.15.1; extra == \"arrow\"",
-            "dask[array,dataframe,distributed]>=2.0.0; extra == \"dask\"",
-            "dataclasses; python_version < \"3.7\"",
-            "numpy",
-            "pandas>=0.24.0; extra == \"dask\"",
-            "pandas>=0.24.0; extra == \"pandas\"",
-            "pyarrow>=6.0.1; extra == \"arrow\"",
-            "scikit-learn!=0.22.0; extra == \"scikit-learn\"",
-            "scipy"
-          ],
-          "requires_python": ">=3.6",
-          "version": "4.2.0"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
               "hash": "c9c804664ebe8f83a211cace637506669e7890fec1b4195b505c214e50dd4eb7",
               "url": "https://files.pythonhosted.org/packages/3c/c8/74d13c999cbb49e3460bf769025659a37ef4a8e884de629720ab4e42dcdb/MarkupSafe-2.1.3-cp310-cp310-musllinux_1_1_x86_64.whl"
             },
@@ -366,49 +328,6 @@
           ],
           "requires_python": ">=3.9",
           "version": "3.2.1"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
-              "hash": "b1240f767f69d7c4c8a29adde2310b871153df9b26b5cb2b54a561ac85146485",
-              "url": "https://files.pythonhosted.org/packages/d4/1c/839e2308aa3b2dc52e3ae0443b5a0d3971d1f096f76dab0cf8424af157cd/numpy-1.26.3-cp310-cp310-musllinux_1_1_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "806dd64230dbbfaca8a27faa64e2f414bf1c6622ab78cc4264f7f5f028fee3bf",
-              "url": "https://files.pythonhosted.org/packages/33/47/fc483df0b7ddeee987b6ff146c879d3556fcea82cc9aa4203d16e5871c62/numpy-1.26.3-cp310-cp310-macosx_10_9_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "6d45b3ec2faed4baca41c76617fcdcfa4f684ff7a151ce6fc78ad3b6e85af0a6",
-              "url": "https://files.pythonhosted.org/packages/37/ec/ef1623be30884230e9fbc689bc1ad4f096b6155b54ddbc1b8726333411c0/numpy-1.26.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "211ddd1e94817ed2d175b60b6374120244a4dd2287f4ece45d49228b4d529178",
-              "url": "https://files.pythonhosted.org/packages/9b/a5/35fde0de93145e4cec0543ce4413b4a96769a6f9714aa1c6cfa29011a4b9/numpy-1.26.3-cp310-cp310-musllinux_1_1_aarch64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "02f98011ba4ab17f46f80f7f8f1c291ee7d855fcef0a5a98db80767a468c85cd",
-              "url": "https://files.pythonhosted.org/packages/a0/8a/2bd4712558ba18a31b52873bc2ecf473a7d264d10f3d16be4f83d7bf31a7/numpy-1.26.3-cp310-cp310-macosx_11_0_arm64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "bdd2b45bf079d9ad90377048e2747a0c82351989a2165821f0c96831b4a2a54b",
-              "url": "https://files.pythonhosted.org/packages/a5/37/d1453c9ff4f7630e68ec036c6fb56ba0d7c769daa8a4083cb4ef8ee45995/numpy-1.26.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "697df43e2b6310ecc9d95f05d5ef20eacc09c7c4ecc9da3f235d39e71b7da1e4",
-              "url": "https://files.pythonhosted.org/packages/d0/b0/13e2b50c95bfc1d5ee04925eb5c105726c838f922d0aaddd57b7c8be0f8b/numpy-1.26.3.tar.gz"
-            }
-          ],
-          "project_name": "numpy",
-          "requires_dists": [],
-          "requires_python": ">=3.9",
-          "version": "1.26.3"
         },
         {
           "artifacts": [
@@ -578,6 +497,63 @@
           "artifacts": [
             {
               "algorithm": "sha256",
+              "hash": "dc685edd2d8742c71ffb238c2c25c17354631ddcfc8e9a105aaf9c228c1a0eb3",
+              "url": "https://files.pythonhosted.org/packages/60/18/8aa3e011139ae9e9e84bb77f15a55c92e06912043a136009ebfadee3798e/polars-0.20.3-cp38-abi3-manylinux_2_24_aarch64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "6450d62becd40175661c5143c4e967d89e46104771aded951d1f0faadc63709e",
+              "url": "https://files.pythonhosted.org/packages/39/66/774fbb33842113de9a8ba86710635fc89d4f6456b7c783fccee31f670e63/polars-0.20.3-cp38-abi3-macosx_11_0_arm64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "c89848562e3176d0e7bc517d1761c6fb5a9fca57ca2950cb58d3d001958dc285",
+              "url": "https://files.pythonhosted.org/packages/57/e9/087c26c4228dccb87d1c349188dd14269e9cd9006f91c10230d553f148fe/polars-0.20.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "ff5ad360f5fab35cbc608eccaea583e387fe4e629f44d4ebfa752dc79502d3f5",
+              "url": "https://files.pythonhosted.org/packages/7f/b0/5d950a79c5cce5679685893ede2d21b0c11880b7b4793adc64f0dc011553/polars-0.20.3-cp38-abi3-macosx_10_12_x86_64.whl"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "8562bffe602b131036e996e0161d96ea7ba1c004e513e49cbec55debc8b5fada",
+              "url": "https://files.pythonhosted.org/packages/b3/c0/2a7d0413b2b6fc94084550a1628ceee8bf8fc9004df8d069a3976293bb1f/polars-0.20.3.tar.gz"
+            }
+          ],
+          "project_name": "polars",
+          "requires_dists": [
+            "adbc_driver_sqlite; extra == \"adbc\"",
+            "backports.zoneinfo; python_version < \"3.9\" and extra == \"timezone\"",
+            "cloudpickle; extra == \"cloudpickle\"",
+            "connectorx>=0.3.2; extra == \"connectorx\"",
+            "deltalake>=0.14.0; extra == \"deltalake\"",
+            "fsspec; extra == \"fsspec\"",
+            "gevent; extra == \"gevent\"",
+            "hvplot>=0.9.1; extra == \"plot\"",
+            "matplotlib; extra == \"matplotlib\"",
+            "numpy>=1.16.0; extra == \"numpy\"",
+            "openpyxl>=3.0.0; extra == \"openpyxl\"",
+            "pandas; extra == \"pandas\"",
+            "pandas; extra == \"sqlalchemy\"",
+            "polars[adbc,cloudpickle,connectorx,deltalake,fsspec,gevent,numpy,pandas,plot,pyarrow,pydantic,pyiceberg,sqlalchemy,timezone,xlsx2csv,xlsxwriter]; extra == \"all\"",
+            "pyarrow>=7.0.0; extra == \"pandas\"",
+            "pyarrow>=7.0.0; extra == \"pyarrow\"",
+            "pydantic; extra == \"pydantic\"",
+            "pyiceberg>=0.5.0; extra == \"pyiceberg\"",
+            "pyxlsb>=1.0; extra == \"pyxlsb\"",
+            "sqlalchemy; extra == \"sqlalchemy\"",
+            "tzdata; platform_system == \"Windows\" and extra == \"timezone\"",
+            "xlsx2csv>=0.8.0; extra == \"xlsx2csv\"",
+            "xlsxwriter; extra == \"xlsxwriter\""
+          ],
+          "requires_python": ">=3.8",
+          "version": "0.20.3"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
               "hash": "b87326822e71bd5f313e7d3bfdc77ac3247035ac10b0c0618bd99dcf95b1e687",
               "url": "https://files.pythonhosted.org/packages/39/9f/ab6d19c5d3fccc1e3e0d835ac773031388802b31d93937daf878465c2ecf/pydantic-1.10.13-py3-none-any.whl"
             },
@@ -625,74 +601,6 @@
           ],
           "requires_python": ">=3.7",
           "version": "1.10.13"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
-              "hash": "8fce70f39076a5aa62e92e69a7f62349f9574d8405c0a5de6ed3ef72de07f446",
-              "url": "https://files.pythonhosted.org/packages/69/60/30a9c3fbe5066a3a93eefe3e2d44553df13587e6f792e1bff20dfed3d17e/scipy-1.11.4-cp310-cp310-musllinux_1_1_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "b9999c008ccf00e8fbcce1236f85ade5c569d13144f77a1946bef8863e8f6eb4",
-              "url": "https://files.pythonhosted.org/packages/13/e5/8012be7857db6cbbbdbeea8a154dbacdfae845e95e1e19c028e82236d4a0/scipy-1.11.4-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "bc9a714581f561af0848e6b69947fda0614915f072dfd14142ed1bfe1b806710",
-              "url": "https://files.pythonhosted.org/packages/34/c6/a32add319475d21f89733c034b99c81b3a7c6c7c19f96f80c7ca3ff1bbd4/scipy-1.11.4-cp310-cp310-macosx_10_9_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "90a2b78e7f5733b9de748f589f09225013685f9b218275257f8a8168ededaeaa",
-              "url": "https://files.pythonhosted.org/packages/6e/1f/91144ba78dccea567a6466262922786ffc97be1e9b06ed9574ef0edc11e1/scipy-1.11.4.tar.gz"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "cf00bd2b1b0211888d4dc75656c0412213a8b25e80d73898083f402b50f47e41",
-              "url": "https://files.pythonhosted.org/packages/de/0d/4fa68303568c70fd56fbf40668b6c6807cfee4cad975f07d80bdd26d013e/scipy-1.11.4-cp310-cp310-macosx_12_0_arm64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "933baf588daa8dc9a92c20a0be32f56d43faf3d1a60ab11b3f08c356430f6e56",
-              "url": "https://files.pythonhosted.org/packages/e0/9e/80e2205d138960a49caea391f3710600895dd8292b6868dc9aff7aa593f9/scipy-1.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-            }
-          ],
-          "project_name": "scipy",
-          "requires_dists": [
-            "asv; extra == \"test\"",
-            "click; extra == \"dev\"",
-            "cython-lint>=0.12.2; extra == \"dev\"",
-            "doit>=0.36.0; extra == \"dev\"",
-            "gmpy2; extra == \"test\"",
-            "jupytext; extra == \"doc\"",
-            "matplotlib>2; extra == \"doc\"",
-            "mpmath; extra == \"test\"",
-            "mypy; extra == \"dev\"",
-            "myst-nb; extra == \"doc\"",
-            "numpy<1.28.0,>=1.21.6",
-            "numpydoc; extra == \"doc\"",
-            "pooch; extra == \"doc\"",
-            "pooch; extra == \"test\"",
-            "pycodestyle; extra == \"dev\"",
-            "pydata-sphinx-theme==0.9.0; extra == \"doc\"",
-            "pydevtool; extra == \"dev\"",
-            "pytest-cov; extra == \"test\"",
-            "pytest-timeout; extra == \"test\"",
-            "pytest-xdist; extra == \"test\"",
-            "pytest; extra == \"test\"",
-            "rich-click; extra == \"dev\"",
-            "ruff; extra == \"dev\"",
-            "scikit-umfpack; extra == \"test\"",
-            "sphinx!=4.1.0; extra == \"doc\"",
-            "sphinx-design>=0.2.0; extra == \"doc\"",
-            "threadpoolctl; extra == \"test\"",
-            "types-psutil; extra == \"dev\"",
-            "typing_extensions; extra == \"dev\""
-          ],
-          "requires_python": ">=3.9",
-          "version": "1.11.4"
         },
         {
           "artifacts": [
@@ -843,7 +751,7 @@
   "prefer_older_binary": false,
   "requirements": [
     "fastapi==0.63.0",
-    "lightgbm",
+    "polars",
     "torch"
   ],
   "requires_python": [
