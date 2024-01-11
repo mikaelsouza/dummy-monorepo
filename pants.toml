@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.18.0"
+pants_version = "2.18.1"
 pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
 pants_distdir = ".monorepo/"
