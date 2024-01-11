@@ -2,7 +2,7 @@ python_requirements(
     name="global-reqs",
     source="requirements/global.txt",
     resolve=parametrize(
-        "monorepo", 
+        "global", 
         "titanic",
     ),
 )
