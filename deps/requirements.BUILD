@@ -1,12 +1,14 @@
 python_requirements(
-    name="titanic-global",
+    name="global-reqs",
     source="requirements/global.txt",
-    resolve="titanic",
+    resolve=parametrize(
+        "monorepo", 
+        "titanic",
+    ),
 )
 
 python_requirements(
-    name="titanic-specific",
+    name="titanic-reqs",
     source="requirements/titanic.txt",
     resolve="titanic",
 )
-

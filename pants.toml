@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.18.1"
+pants_version = "2.16.0"
 pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
 pants_distdir = ".monorepo/"
@@ -21,17 +21,16 @@ root_patterns = ["projects/**/"]
 
 [python]
 interpreter_constraints = ["==3.10.*"]
-pip_version = "latest"
+pip_version = "23.0.1"
 enable_resolves = true
-default_resolve = "monorepo"
+default_resolve = "global"
 
 [python.resolves]
-monorepo = "deps/lockfiles/monorepo.lock"
+global = "deps/lockfiles/global.lock"
 titanic = "deps/lockfiles/titanic.lock"
-project2 = "deps/lockfiles/project2.lock"
 
-[python-infer]
-use_rust_parser = true
+# [python-infer]
+# use_rust_parser = true
 
 [anonymous-telemetry]
 enabled = false
@@ -40,4 +39,4 @@ enabled = false
 args = ["--ignore-missing-imports", "--cache-dir", ".monorepo/.mypy_cache"]
 
 [pytest]
-install_from_resolve = "monorepo"
+install_from_resolve = "global"
