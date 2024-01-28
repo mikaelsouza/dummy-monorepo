@@ -1,4 +1,5 @@
 torch
-polars
+pandas
 scikit-learn
 matplotlib
+ipykernel

@@ -21,7 +21,7 @@ root_patterns = ["projects/**/", "projects/**/**/", "libs/**/", "libs"]
 
 [python]
 interpreter_constraints = ["==3.10.*"]
-pip_version = "23.0.1"
+pip_version = "latest"
 enable_resolves = true
 default_resolve = "global"
 
@@ -30,8 +30,8 @@ global = "deps/lockfiles/global.lock"
 machine-learning = "deps/lockfiles/machine-learning.lock"
 web = "deps/lockfiles/web.lock"
 
-# [python-infer]
-# use_rust_parser = true
+[python-infer]
+use_rust_parser = true
 
 [anonymous-telemetry]
 enabled = false

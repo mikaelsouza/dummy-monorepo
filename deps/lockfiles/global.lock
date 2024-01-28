@@ -9,7 +9,6 @@
 //     "CPython==3.10.*"
 //   ],
 //   "generated_with_requirements": [
-//     "fastapi==0.63.0",
 //     "pytest"
 //   ],
 //   "manylinux": "manylinux2014",
@@ -52,71 +51,6 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "98d8ea9591d8512fdadf255d2a8fa56515cdd8624dca4af369da73727409508e",
-              "url": "https://files.pythonhosted.org/packages/9f/33/1b643f650688ad368983bbaf3b0658438038ea84d775dd37393d826c3833/fastapi-0.63.0-py3-none-any.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "63c4592f5ef3edf30afa9a44fa7c6b7ccb20e0d3f68cd9eba07b44d552058dcb",
-              "url": "https://files.pythonhosted.org/packages/7f/5b/23057d0cdeac3643c08937ef1348590e284842636c837108971d8af6b51d/fastapi-0.63.0.tar.gz"
-            }
-          ],
-          "project_name": "fastapi",
-          "requires_dists": [
-            "aiofiles<0.6.0,>=0.5.0; extra == \"all\"",
-            "aiofiles<0.6.0,>=0.5.0; extra == \"test\"",
-            "async_exit_stack<2.0.0,>=1.0.1; extra == \"all\"",
-            "async_exit_stack<2.0.0,>=1.0.1; extra == \"test\"",
-            "async_generator<2.0.0,>=1.10; extra == \"all\"",
-            "async_generator<2.0.0,>=1.10; extra == \"test\"",
-            "autoflake<2.0.0,>=1.3.1; extra == \"dev\"",
-            "black==20.8b1; extra == \"test\"",
-            "databases[sqlite]<0.4.0,>=0.3.2; extra == \"test\"",
-            "email_validator<2.0.0,>=1.1.1; extra == \"all\"",
-            "email_validator<2.0.0,>=1.1.1; extra == \"test\"",
-            "flake8<4.0.0,>=3.8.3; extra == \"dev\"",
-            "flake8<4.0.0,>=3.8.3; extra == \"test\"",
-            "flask<2.0.0,>=1.1.2; extra == \"test\"",
-            "graphene<3.0.0,>=2.1.8; extra == \"all\"",
-            "graphene<3.0.0,>=2.1.8; extra == \"dev\"",
-            "httpx<0.15.0,>=0.14.0; extra == \"test\"",
-            "isort<6.0.0,>=5.0.6; extra == \"test\"",
-            "itsdangerous<2.0.0,>=1.1.0; extra == \"all\"",
-            "jinja2<3.0.0,>=2.11.2; extra == \"all\"",
-            "markdown-include<0.6.0,>=0.5.1; extra == \"doc\"",
-            "mkdocs-markdownextradata-plugin<0.2.0,>=0.1.7; extra == \"doc\"",
-            "mkdocs-material<7.0.0,>=6.1.4; extra == \"doc\"",
-            "mkdocs<2.0.0,>=1.1.2; extra == \"doc\"",
-            "mypy==0.790; extra == \"test\"",
-            "orjson<4.0.0,>=3.2.1; extra == \"all\"",
-            "orjson<4.0.0,>=3.2.1; extra == \"test\"",
-            "passlib[bcrypt]<2.0.0,>=1.7.2; extra == \"dev\"",
-            "peewee<4.0.0,>=3.13.3; extra == \"test\"",
-            "pydantic<2.0.0,>=1.0.0",
-            "pytest-asyncio<0.15.0,>=0.14.0; extra == \"test\"",
-            "pytest-cov==2.10.0; extra == \"test\"",
-            "pytest==5.4.3; extra == \"test\"",
-            "python-jose[cryptography]<4.0.0,>=3.1.0; extra == \"dev\"",
-            "python-multipart<0.0.6,>=0.0.5; extra == \"all\"",
-            "python-multipart<0.0.6,>=0.0.5; extra == \"test\"",
-            "pyyaml<6.0.0,>=5.3.1; extra == \"all\"",
-            "pyyaml<6.0.0,>=5.3.1; extra == \"doc\"",
-            "requests<3.0.0,>=2.24.0; extra == \"all\"",
-            "requests<3.0.0,>=2.24.0; extra == \"test\"",
-            "sqlalchemy<2.0.0,>=1.3.18; extra == \"test\"",
-            "starlette==0.13.6",
-            "typer-cli<0.0.10,>=0.0.9; extra == \"doc\"",
-            "ujson<4.0.0,>=3.0.0; extra == \"all\"",
-            "uvicorn[standard]<0.14.0,>=0.12.0; extra == \"all\"",
-            "uvicorn[standard]<0.14.0,>=0.12.0; extra == \"dev\""
-          ],
-          "requires_python": ">=3.6",
-          "version": "0.63.0"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
               "hash": "b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374",
               "url": "https://files.pythonhosted.org/packages/ef/a6/62565a6e1cf69e10f5727360368e451d4b7f58beeac6173dc9db836a5b46/iniconfig-2.0.0-py3-none-any.whl"
             },
@@ -153,13 +87,13 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "d89c696a773f8bd377d18e5ecda92b7a3793cbe66c87060a6fb58c7b6e1061f7",
-              "url": "https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl"
+              "hash": "7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981",
+              "url": "https://files.pythonhosted.org/packages/a5/5b/0cc789b59e8cc1bf288b38111d002d8c5917123194d45b29dcdac64723cc/pluggy-1.4.0-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "cf61ae8f126ac6f7c451172cf30e3e43d3ca77615509771b3a984a0730651e12",
-              "url": "https://files.pythonhosted.org/packages/36/51/04defc761583568cae5fd533abda3d40164cbdcf22dee5b7126ffef68a40/pluggy-1.3.0.tar.gz"
+              "hash": "8c85c2876142a764e5b7548e7d9a0e0ddb46f5185161049a79b7e974454223be",
+              "url": "https://files.pythonhosted.org/packages/54/c6/43f9d44d92aed815e781ca25ba8c174257e27253a94630d21be8725a2b59/pluggy-1.4.0.tar.gz"
             }
           ],
           "project_name": "pluggy",
@@ -170,59 +104,7 @@
             "tox; extra == \"dev\""
           ],
           "requires_python": ">=3.8",
-          "version": "1.3.0"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
-              "hash": "b87326822e71bd5f313e7d3bfdc77ac3247035ac10b0c0618bd99dcf95b1e687",
-              "url": "https://files.pythonhosted.org/packages/39/9f/ab6d19c5d3fccc1e3e0d835ac773031388802b31d93937daf878465c2ecf/pydantic-1.10.13-py3-none-any.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "bc0898c12f8e9c97f6cd44c0ed70d55749eaf783716896960b4ecce2edfd2d69",
-              "url": "https://files.pythonhosted.org/packages/13/7c/4540e678a202273d667285309d46f09682e11e7a28c39a49670b17f96dd5/pydantic-1.10.13-cp310-cp310-musllinux_1_1_i686.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "32c8b48dcd3b2ac4e78b0ba4af3a2c2eb6048cb75202f0ea7b34feb740efc340",
-              "url": "https://files.pythonhosted.org/packages/51/cd/721eb771f3f09f60de0807e240c3acf44c38828d0ced869fe8df7e79801b/pydantic-1.10.13.tar.gz"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "3ecea2b9d80e5333303eeb77e180b90e95eea8f765d08c3d278cd56b00345d01",
-              "url": "https://files.pythonhosted.org/packages/60/8f/1c75810777a93859c4ac54179ecdd83c14d02706a648f87c51f6798e7e85/pydantic-1.10.13-cp310-cp310-macosx_11_0_arm64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "84bafe2e60b5e78bc64a2941b4c071a4b7404c5c907f5f5a99b0139781e69ed8",
-              "url": "https://files.pythonhosted.org/packages/6d/35/2063581cd58d31c4da4891cc42d7cad1dccd805013a5534acd51593f735d/pydantic-1.10.13-cp310-cp310-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "654db58ae399fe6434e55325a2c3e959836bd17a6f6a0b6ca8107ea0571d2e17",
-              "url": "https://files.pythonhosted.org/packages/8e/45/89c01c7ed39072bf79f286e0694394d06ab07cc5084c0cd31e4364cf2000/pydantic-1.10.13-cp310-cp310-musllinux_1_1_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "1740068fd8e2ef6eb27a20e5651df000978edce6da6803c2bef0bc74540f9548",
-              "url": "https://files.pythonhosted.org/packages/e0/2f/d6f17f8385d718233bcae893d27525443d41201c938b68a4af3d591a33e4/pydantic-1.10.13-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "efff03cc7a4f29d9009d1c96ceb1e7a70a65cfe86e89d34e4a5f2ab1e5693737",
-              "url": "https://files.pythonhosted.org/packages/e3/39/c866689ef73ca39c4efc314fa751397ae15ee085632086383fefec8600c0/pydantic-1.10.13-cp310-cp310-macosx_10_9_x86_64.whl"
-            }
-          ],
-          "project_name": "pydantic",
-          "requires_dists": [
-            "email-validator>=1.0.3; extra == \"email\"",
-            "python-dotenv>=0.10.4; extra == \"dotenv\"",
-            "typing-extensions>=4.2.0"
-          ],
-          "requires_python": ">=3.7",
-          "version": "1.10.13"
+          "version": "1.4.0"
         },
         {
           "artifacts": [
@@ -263,33 +145,6 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "bd2ffe5e37fb75d014728511f8e68ebf2c80b0fa3d04ca1479f4dc752ae31ac9",
-              "url": "https://files.pythonhosted.org/packages/c5/a4/c9e228d7d47044ce4c83ba002f28ff479e542455f0499198a3f77c94f564/starlette-0.13.6-py3-none-any.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "ebe8ee08d9be96a3c9f31b2cb2a24dbdf845247b745664bd8a3f9bd0c977fdbc",
-              "url": "https://files.pythonhosted.org/packages/53/da/ddd95317478f8f4be8e5445c0c5acf928b1192953834a520afdacf13ddea/starlette-0.13.6.tar.gz"
-            }
-          ],
-          "project_name": "starlette",
-          "requires_dists": [
-            "aiofiles; extra == \"full\"",
-            "graphene; extra == \"full\"",
-            "itsdangerous; extra == \"full\"",
-            "jinja2; extra == \"full\"",
-            "python-multipart; extra == \"full\"",
-            "pyyaml; extra == \"full\"",
-            "requests; extra == \"full\"",
-            "ujson; extra == \"full\""
-          ],
-          "requires_python": ">=3.6",
-          "version": "0.13.6"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
               "hash": "939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
               "url": "https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl"
             },
@@ -303,35 +158,16 @@
           "requires_dists": [],
           "requires_python": ">=3.7",
           "version": "2.0.1"
-        },
-        {
-          "artifacts": [
-            {
-              "algorithm": "sha256",
-              "hash": "af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd",
-              "url": "https://files.pythonhosted.org/packages/b7/f4/6a90020cd2d93349b442bfcb657d0dc91eee65491600b2cb1d388bc98e6b/typing_extensions-4.9.0-py3-none-any.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "23478f88c37f27d76ac8aee6c905017a143b0b1b886c3c9f66bc2fd94f9f5783",
-              "url": "https://files.pythonhosted.org/packages/0c/1d/eb26f5e75100d531d7399ae800814b069bc2ed2a7410834d57374d010d96/typing_extensions-4.9.0.tar.gz"
-            }
-          ],
-          "project_name": "typing-extensions",
-          "requires_dists": [],
-          "requires_python": ">=3.8",
-          "version": "4.9.0"
         }
       ],
       "platform_tag": null
     }
   ],
   "path_mappings": {},
-  "pex_version": "2.1.134",
+  "pex_version": "2.1.137",
   "pip_version": "23.0.1",
   "prefer_older_binary": false,
   "requirements": [
-    "fastapi==0.63.0",
     "pytest"
   ],
   "requires_python": [

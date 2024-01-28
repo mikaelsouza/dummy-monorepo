@@ -1,0 +1,9 @@
+{
+  "venvPath": ".monorepo/export/python/virtualenvs/",
+  "venv": "machine-learning/3.10.13",
+  "extraPaths": [
+    "libs/calculator",
+    "projects/machine-learning/sepal",
+    "projects/machine-learning/titanic"
+  ]
+}

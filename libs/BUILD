@@ -1,1 +1,1 @@
-__defaults__(all=dict(resolve=parametrize("global", "machine-learning")))
+__defaults__(all=dict(resolve=parametrize("global", "machine-learning", "web")))
