@@ -14,18 +14,21 @@ backend_packages = [
   "pants.backend.shell.lint.shfmt",
   "pants.backend.shell.lint.shellcheck",
 ]
+build_patterns = ["BUILD", "BUILD.*", "*.BUILD"]
 
 [source]
-root_patterns = ["projects/**/"]
+root_patterns = ["projects/**/", "projects/**/**/", "libs/**/", "libs"]
 
 [python]
 interpreter_constraints = ["==3.10.*"]
 pip_version = "latest"
 enable_resolves = true
-default_resolve = "monorepo"
+default_resolve = "global"
 
 [python.resolves]
-monorepo = "deps/lockfiles/monorepo.lock"
+global = "deps/lockfiles/global.lock"
+machine-learning = "deps/lockfiles/machine-learning.lock"
+web = "deps/lockfiles/web.lock"
 
 [python-infer]
 use_rust_parser = true
@@ -37,4 +40,4 @@ enabled = false
 args = ["--ignore-missing-imports", "--cache-dir", ".monorepo/.mypy_cache"]
 
 [pytest]
-install_from_resolve = "monorepo"
+install_from_resolve = "global"
