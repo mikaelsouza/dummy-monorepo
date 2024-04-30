@@ -1,18 +1,18 @@
 [GLOBAL]
-pants_version = "2.18.1"
+pants_version = "2.20.0"
 pants_workdir = ".pants/.pants.d"
 pants_subprocessdir = ".pants/.pids"
 pants_distdir = ".monorepo/"
 concurrent = true
 backend_packages = [
-  "pants.backend.python",
-  "pants.backend.python.lint.black",
-  "pants.backend.python.lint.docformatter",
-  "pants.backend.python.typecheck.mypy",
-  "pants.backend.build_files.fmt.black",
-  "pants.backend.shell",
-  "pants.backend.shell.lint.shfmt",
-  "pants.backend.shell.lint.shellcheck",
+    "pants.backend.python",
+    "pants.backend.python.lint.black",
+    "pants.backend.python.lint.docformatter",
+    "pants.backend.python.typecheck.mypy",
+    "pants.backend.build_files.fmt.black",
+    "pants.backend.shell",
+    "pants.backend.shell.lint.shfmt",
+    "pants.backend.shell.lint.shellcheck",
 ]
 build_patterns = ["BUILD", "BUILD.*", "*.BUILD"]
 
