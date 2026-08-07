@@ -18,11 +18,11 @@ generate-lockfiles:
 	
 .PHONY: generate-venv
 generate-venv:
-	pants export --resolve=monorepo
+	pants export --resolve=global --resolve=machine-learning --resolve=web
 
 .PHONY: titanic-download-dataset
 titanic-download-dataset:
-	@ projects/titanic/scripts/get-dataset.sh
+	@ projects/machine-learning/titanic/scripts/get-dataset.sh
 
 .PHONY: update-pants-image
 update-pants-image:
