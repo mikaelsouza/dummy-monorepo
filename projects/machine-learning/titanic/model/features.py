@@ -1,10 +1,10 @@
 """Feature engineering helpers for the Titanic survival task.
 
 ``preprocess`` turns a raw Titanic dataframe (as produced by the dataset
-downloaded via ``scripts/get-dataset.sh``) into a numeric feature matrix that
-can be fed straight into a scikit-learn model. It is shared by the training
-script and the serving application so both apply exactly the same
-transformation.
+downloaded via ``scripts/get-dataset.sh``) into a numeric feature matrix
+that can be fed straight into a scikit-learn model. It is shared by the
+training script and the serving application so both apply exactly the
+same transformation.
 """
 
 import pandas as pd

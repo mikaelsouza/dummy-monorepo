@@ -16,7 +16,9 @@ def test_predict_returns_expected_shape(tmp_path, monkeypatch):
     mini_titanic_df().to_csv(csv_path, index=False)
 
     model_path = tmp_path / "titanic_model.joblib"
-    accuracy = train_model(str(csv_path), str(model_path), test_size=0.5, random_state=0)
+    accuracy = train_model(
+        str(csv_path), str(model_path), test_size=0.5, random_state=0
+    )
     assert 0.0 <= accuracy <= 1.0
 
     monkeypatch.setattr(serving_app, "MODEL_PATH", str(model_path))
