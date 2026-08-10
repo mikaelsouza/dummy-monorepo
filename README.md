@@ -51,6 +51,23 @@ Download the Titanic dataset for the machine learning project:
 make titanic-download-dataset
 ```
 
+Train a Titanic survival model and persist it with joblib:
+```bash
+make titanic-train
+```
+
+Serve the trained model as a FastAPI prediction API (default `http://localhost:8000`):
+```bash
+make titanic-serve
+```
+The API exposes `GET /health` and `POST /predict` (a JSON body with `Pclass`,
+`Sex`, `Age`, `SibSp`, `Parch`, `Fare`, `Embarked`).
+
+Run the standalone web sample service:
+```bash
+make web-serve
+```
+
 ## CI/CD
 
 Continuous Integration is handled via [Woodpecker CI](https://woodpecker-ci.org/), configured in `.woodpecker.yaml`. On every push, the CI pipeline runs checks, linters, and tests across the monorepo, utilizing a remote Bazel-compatible cache to speed up builds.

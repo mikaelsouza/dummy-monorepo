@@ -2,6 +2,7 @@
 .monorepo/
 .mypy_cache/
 data/
+*.joblib
 .ipynb_checkpoints/
 __pycache__/
 .env

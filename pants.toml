@@ -6,6 +6,7 @@ pants_distdir = ".monorepo/"
 concurrent = true
 backend_packages = [
     "pants.backend.python",
+    "pants.backend.python.providers.experimental.python_build_standalone",
     "pants.backend.python.lint.black",
     "pants.backend.python.lint.docformatter",
     "pants.backend.python.typecheck.mypy",
@@ -20,7 +21,7 @@ build_patterns = ["BUILD", "BUILD.*", "*.BUILD"]
 root_patterns = ["projects/**/", "projects/**/**/", "libs/**/", "libs"]
 
 [python]
-interpreter_constraints = ["==3.10.*"]
+interpreter_constraints = ["==3.14.*"]
 pip_version = "latest"
 enable_resolves = true
 default_resolve = "global"
@@ -41,3 +42,7 @@ args = ["--ignore-missing-imports", "--cache-dir", ".monorepo/.mypy_cache"]
 
 [pytest]
 install_from_resolve = "global"
+
+[docformatter]
+install_from_resolve = "global"
+requirements = ["docformatter==1.7.8"]
