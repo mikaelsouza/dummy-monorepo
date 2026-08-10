@@ -1,5 +1,8 @@
 torch
 pandas
 scikit-learn
+joblib
 matplotlib
 ipykernel
+fastapi
+uvicorn

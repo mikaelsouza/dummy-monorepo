@@ -24,6 +24,18 @@ generate-venv:
 titanic-download-dataset:
 	@ projects/machine-learning/titanic/scripts/get-dataset.sh
 
+.PHONY: titanic-train
+titanic-train:
+	PYTHONPATH=projects/machine-learning/titanic python3 -m model.train
+
+.PHONY: titanic-serve
+titanic-serve:
+	PYTHONPATH=projects/machine-learning/titanic python3 -m serving.main
+
+.PHONY: web-serve
+web-serve:
+	uvicorn --app-dir projects/web main:app
+
 .PHONY: update-pants-image
 update-pants-image:
 	@ docker buildx build \
